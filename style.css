@@ -77,6 +77,8 @@ a:active {
 	padding: 20px;
 	text-align: center;
 	color: white;
+	font-size: 30px;
+	text-decoration: none;
 	text-align: justify;
 	text-justify: inter-word;
 }
