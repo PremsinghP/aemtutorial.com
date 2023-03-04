@@ -32,7 +32,7 @@ main {
 
 .sidebar {
 	width: 20%;
-	background-image: linear-gradient(310deg, darkblue, rgb(360, 222, 100));
+	background-image: linear-gradient(310deg, darkblue, rgb(120, 100, 100));
 }
 
 nav {
