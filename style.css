@@ -46,7 +46,6 @@ nav ul {
 nav li {
 	margin-bottom: 10px;
 	background-image: linear-gradient(310deg, darkblue, rgb(360, 22, 10));
-	font-family: cursive;
   text-align: center;
 }
 
@@ -83,7 +82,7 @@ a:active {
 	text-decoration: none;
   text-align: justify;
   text-justify: inter-word;
-  font-family: cursive;
+
 }
 
 #main-content {
@@ -95,7 +94,6 @@ a:active {
 	text-decoration: none;
   text-align: center;
   text-justify: inter-word;
-  font-family: cursive;
 }
 
 .sol{
@@ -108,7 +106,6 @@ a:active {
 	padding: 20px;
 	color: white;
 	font-size: 20px;
-	font-family: cursive;
 	text-decoration: none;
   text-align: center;
   text-justify: inter-word;
