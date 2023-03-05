@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+<head>
+   <title>Premsingh Padya - AEM Tutorial</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <header>
+    <h1><u>AEM Tutorial</u></h1>
+      <marquee> This website will provide complete AEM course Touch-ups. I am providing for free on this website. Please correct me if I am wrong...! :)</marquee>
+  </header>
+
+  <main>
+      <section class="sidebar">
+         <nav>
+            <ul>
+               <li class="active"><a href="about.html">About Premsingh Padya</a></li>
+               <li><a href="intro.html">Introduction to AEM</a></li>
+               <li><a href="aemqa.html">AEM Dev Q&A</a></li>
+               <li><a href="#">Link 3</a></li>
+               <li><a href="#">Link 4</a></li>
+               <li><a href="#">Link 5</a></li>
+               <li><a href="#">Link 6</a></li>
+               <li><a href="#">Link 7</a></li>
+               <li><a href="#">Link 8</a></li>
+               <li><a href="#">Link 9</a></li>
+               <li><a href="#">Link 10</a></li>
+           </ul>
+       </nav>
+   </section>
+
+   <section class="main-content">
+    <ul id="myUL">
+      <li><span class="caret">Premsingh's Profile</span>
+        <ul class="nested">
+          <li>Software Engineer (AEM Developer)</li>
+          <li>Founder & President (NGO)</li>
+          <li><span class="caret">more....</span>
+            <ul class="nested">
+              <li>Karmaveer Chakra Awardee from iCONGO || GYL Fellow</li>
+              <li>Mentor, GOAL 2.O (MoTA), Govt of India.</li>
+          </li>
+      </ul>
+  </li>  
+</ul>
+
+</section>
+</main>
+
+<script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+    });
+  }
+</script>
+
+
+<footer>
+    &copy; All rights reserved..! @Premsingh Padya
+</footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Premsingh Padya - AEM Tutorial</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <header>
+    <h1><u>AEM Tutorial</u></h1>
+      <marquee> This website will provide complete AEM course Touch-ups. I am providing for free on this website. Please correct me if I am wrong...! :)</marquee>
+  </header>
+
+  <main>
+      <section class="sidebar">
+         <nav>
+            <ul>
+               <li><a href="about.html">About Premsingh Padya</a></li>
+               <li><a href="intro.html">Introduction to AEM</a></li>
+               <li class="active"><a href="aemqa.html">AEM Dev Q&A</a></li>
+               <li><a href="#">Link 3</a></li>
+               <li><a href="#">Link 4</a></li>
+               <li><a href="#">Link 5</a></li>
+               <li><a href="#">Link 6</a></li>
+               <li><a href="#">Link 7</a></li>
+               <li><a href="#">Link 8</a></li>
+               <li><a href="#">Link 9</a></li>
+               <li><a href="#">Link 10</a></li>
+           </ul>
+       </nav>
+   </section>
+
+   <section id="main-content">
+<center>    
+Q1: A user report that requests are slow on AEM instance. The infrastructure team verified that everything is normal using third-party monitoring solutions. Which internal AEM metrics should be checked to find out the issue?
+A. Request Performance
+B. Queue Performance
+C. Thread Performance
+D. Query Performance
+
+<br> Q2: An AEM environment is cloned, and the domain and IPs are changed. What must be reconfigured for content activation to work?
+A. User of replication agents
+B. Transport URI of the flush and replication agents.  XXXXXXXX
+C. User of flush agents
+D. Transport URI in dispatcher configuration
+<br> Q3. What is the default value for AC Handling when creating packages?
+A. Overwrite
+B. Merge
+C. Ignore
+D. MergePreserve
+<br> Q4. An AEM developer is migrating from AEM v6.3 to v6.5. What is the most efficient method to make sure that code runs correctly after the upgrade?
+A. Make sure all code in /core folder is updated.
+B. Use the AEM compatibility Package.
+C. Use the Content Transfer Tool.
+D. Make sure all code in /apps folder is updated.
+<br> Q5. Which practice should be used to push a code fix to make it into the current release candidate?
+A. Make the fix locally and upload the package to where the release candidate is deployed.
+B. Cut a new release candidate from the master branch.
+C. Make the fix in CRX where the current release candidate is currently deployed.
+D. Cherry-pick the fix commit into the release candidate.
+<br> Q6. An AEM application was recently upgraded from AEM v6.5. The developers found that old workflows were no longer getting instantiated. What could be the root cause for the workflows to stop working?
+A. Workflow Launchers are in /conf/global/settings/workflow/launcher/config.
+B. Workflow models are defined in /conf/global/settings/workflow/models
+C. Workflow Models are defined in /var/workflow/models
+D. Workflow models are defined in /etc/workflow/models.
+<br> Q7. After a recent code deployment, an AEM site is experiencing longer than usual query execution time. The deployment package contained some new Lucene index definitions. A developer needs to identify the long running queries and confirm that the new index definitions are getting applied correctly. Which action should the developer take to investigate this problem?
+A. Goto Tools > Operations > Diagnosis > Log Messages. Configure DEBUG log level on com.day.cq.search to monitor search queries.
+B. Goto Tools > Operations > Diagnosis > Index Manager. Select the new Indexes and run a consistency check.
+C. Goto Tools > Operations > Diagnosis > Download Thead Dumps. Analyze the Thread Dumps to identify long running requests.
+D. Goto Tools > Operations > Diagnosis > Query Performance > Slow Queries. Select a Query and Click on Explain.
+
+<br><br><p class="sol">Solutions: 1.D 2.B 3.C 4.B 5.D 6.D 7.D 8.C<br>
+</center>
+<button type="button" onclick="aemqa()">Need More Questions</button></p>
+</section>
+</main>
+<script type="text/javascript">
+function aemqa() {
+  document.getElementById("main-content").innerHTML ="<center>Q8. Too many pages are invalidated in the dispatcher cache when a page is published. What is most likely causing this issue in the dispatcher configuration?<br>Q9. An AEM Developer wants to display localized page name to users of translated content. Rather than having a Spanish-speaking user navigate to: www.mydomain.com/es/home.html. The Developer wants the URL to be: www.mydomain.com/es/casa.html. What is the recommended way to achieving this? <br>Q10. What two types of testing are available OOTB in AEM Cloud Manager Pipeline? (Select Two). <br>Q11. An AEM Developer needs to migrate to AEM as a Cloud Service from AEM version 6.4. The AEM Developer is not able to run the Cloud Readiness Analyzer. What is preventing the Cloud Readiness Analyzer from running? <br>Q12. A custom AEM application has a run time dependency to a third party OSGI bundle that is NOT included in out-of-the-box AEM. The third party dependency needs to be available for multiple applications and be upgraded separately from the custom AEM application. How should a developer make sure that the bundle is installed on all environments? <br>Q13. An AEM Developer needs to build out a project that contains only the required modules. Which most recent AEM Archetype module is optional? <br>Q14. An AEM Developer sets up an AEM project using the AEM Archetype. The build fails on its first run of mvn install due to dependencies not found. What are the two most likely causes? (Select two). <br>Q15. A custom AEM application is using the PageManager API. What should a developer add to make the application compile and run correctly in AEM? <br><br>Answers:<br> 8.The level of cache invalidation is NOT appropriate for the published content model. 9.Use Vanity URL to redirect …/es/casa to …/es/home<br> 10.Code Quality testing & Performance testing<br> 11. The AEM Developer is not an admin or does not have administrator rights. <br>12.Declare the dependency correctly using a link to the OSGI Bundle Repository(OBR) <br>13.   Ui.frontend <br>14.There is no adobe-public profile configured in settings.xml, The developer did not add the adobe-public profile to the build command. <br>15.A maven dependency to AEM uber-jar to the application bundle.</center>"; }
+</script>
+<footer>
+    &copy; All rights reserved..! @Premsingh Padya
+</footer>
+</body>
+</html>

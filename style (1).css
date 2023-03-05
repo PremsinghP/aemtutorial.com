@@ -1,0 +1,164 @@
+* {
+ 	box-sizing: border-box;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ html, body {
+ 	height: 100%;
+ }
+
+/* Header */
+
+header {
+	height: 10%;
+	background-image: linear-gradient(45deg, #FFFFFF, rgb(255, 122, 89));
+	text-align: center;
+}
+
+marquee{
+	background-image: linear-gradient(310deg, #ffffff, rgb(360, 320, 200));
+}
+
+/* Main content */
+
+main {
+	height: 88%;
+	display: flex;
+	flex-direction: row;
+}
+
+/* Sidebar */
+
+.sidebar {
+	width: 20%;
+	background-image: linear-gradient(310deg, darkblue, rgb(360, 222, 100));
+}
+
+nav {
+	padding-top: 10px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	margin-bottom: 10px;
+	background-image: linear-gradient(310deg, darkblue, rgb(360, 22, 10));
+	font-family: cursive;
+  text-align: center;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	font-size: 20px;
+}
+
+a:link {
+			color: #006600;
+			text-decoration: none;
+		}
+
+nav a:hover {
+	background-color: #333;
+	color: black;
+}
+a:active {
+			color: rgb(255, 105, 138);
+		}
+
+
+/* Main content */
+
+.main-content {
+	width: 80%;
+	background-image: url("bg.jpg");
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: cursive;
+}
+
+#main-content {
+	width: 80%;
+	background-image: url("bg.jpg");
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+  text-align: center;
+  text-justify: inter-word;
+  font-family: cursive;
+}
+
+.sol{
+	text-align: right;
+}
+
+#myUL {
+	width: 80%;
+	background-image: url("bg.jpg");
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+	font-family: cursive;
+	text-decoration: none;
+  text-align: center;
+  text-justify: inter-word;
+}
+ul, #myUL {
+	list-style-type: none;
+}
+
+#myUL {
+	margin: 0;
+	padding: 0;
+}
+
+.caret {
+	cursor: pointer;
+	-webkit-user-select: none; /* Safari 3.1+ */
+	-moz-user-select: none; /* Firefox 2+ */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none;
+}
+
+.caret::before {
+	content: "\25B6";
+	display: inline-block;
+	margin-right: 6px;
+}
+
+.caret-down::before {
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Safari */'
+	transform: rotate(90deg);  
+}
+
+.nested {
+	display: none;
+}
+
+.active {
+	display: block;
+
+	}
+
+/* Footer */
+
+footer {
+	height: 2%;
+	background-color: #ccc;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
